@@ -1,22 +1,25 @@
 /* all */
-body{
+body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-a, a:hover{
+
+a,
+a:hover {
     text-decoration: none;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.btn{
+.btn {
     background-color: #FF5959;
     display: inline-block;
     color: #fff;
@@ -24,69 +27,78 @@ img{
     margin: 10px 0;
     border-radius: 5px;
 }
+
 /* color */
-.text_color{
+.text_color {
     color: #FFAD5A;
 }
-.black33{
+
+.black33 {
     color: #333333;
 }
 
-.contain{
+.contain {
     margin: 0 156px;
 }
 
 /* width */
 
-.w35{
+.w35 {
     width: 35%;
 }
-.w40{
+
+.w40 {
     width: 40%;
 }
-.w50{
+
+.w50 {
     width: 50%;
 }
-.w60{
+
+.w60 {
     width: 60%;
 }
+
 /* header tag */
-h1{
+h1 {
     font-family: 'Yeseva One', serif;
     font-size: 60px;
     line-height: 80px;
 }
 
-h2{
+h2 {
     font-weight: 700;
     font-size: 48px;
     line-height: 70px;
     margin-bottom: 48px;
 }
-h3{
+
+h3 {
     font-size: 36px;
     line-height: 54px;
     margin-bottom: 30px;
 }
-h4{
+
+h4 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 16px;
 }
 
 /* stay_mission */
-.stay_mission{
+.stay_mission {
     justify-content: space-between;
     padding: 75px 0;
 }
-.stay_mission .header{
+
+.stay_mission .header {
     padding-left: 20px;
     position: relative;
     margin-bottom: 15px;
     font-weight: normal;
 }
 
-.stay_mission .header::before{
+.stay_mission .header::before {
     content: '';
     position: absolute;
     left: 0;
@@ -98,53 +110,80 @@ h4{
     background-color: #FF5959;
     border-radius: 2px;
 }
+
 /* my_mission */
 
-.my_mission{
+.my_mission {
     padding-bottom: 85px;
 }
 
-.my_mission .header{
+.my_mission .header {
     text-align: center;
     color: #13103A;
 }
-.my_mission .card{
+
+.my_mission .card {
     border-radius: 10px;
     margin: 0 10px;
     width: 33.33%;
     padding: 10px 20px;
 }
-.my_mission .card img{
+
+.my_mission .card img {
     height: 141px;
     width: 141px;
 }
-.my_mission .card:first-child{
+
+.my_mission .card:first-child {
     background-color: rgba(79, 157, 166, .10);
 }
-.my_mission .card:nth-child(2){
+
+.my_mission .card:nth-child(2) {
     background-color: rgba(255, 89, 89, 0.10);
 }
-.my_mission .card:nth-child(3){
+
+.my_mission .card:nth-child(3) {
     background-color: #FFF4D6;
 }
 
 /* develop section */
-.develop{
+.develop {
     padding: 0 156px;
     margin-bottom: 100px;
     justify-content: space-between;
-    background-image: url(images/shapes/shape-1.png);
-    background-repeat: no-repeat;
-    background-position: 60px center;
-    background-size: 220px;
     position: relative;
 }
 
-.develop .bgImg{
+.develop .bgImg {
     position: absolute;
     height: 150px;
     width: 150px;
-    left: 0;
+    left: -20px;
     bottom: -100px;
+    z-index: -10;
+}
+
+.bgImg1 {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    left: 50px;
+    bottom: 90px;
+    z-index: -10;
+}
+
+/* community section */
+.community {
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.community .bgImg {
+    position: absolute;
+    right: -70px;
+    bottom: -60px;
+    width: 200px;
+    height: 200px;
     z-index: -10;
 }
