@@ -46,6 +46,7 @@ main {
 .contain {
     max-width: 100%;
     margin: auto;
+    padding: 0 20px !important;
 }
 
 
@@ -96,6 +97,7 @@ h4 {
 .stay_mission {
     justify-content: space-between;
     padding: 75px 0 30px 0;
+    text-align: left;
 }
 
 
@@ -257,7 +259,7 @@ footer h3 {
 
 /* responsive */
 
-/* container */
+/* min width */
 
 @media (min-width: 576px) {
     .contain {
@@ -287,10 +289,62 @@ footer h3 {
     }
 }
 
-/* header */
+/* responsive max width */
 @media (max-width: 767px) {
-    .stay_mission {
+    .flex {
         flex-direction: column-reverse;
-
+        text-align: center;
     }
+    .stay_mission .w40, .w50{
+        width: 100%;
+    }
+    .stay_mission .header::before {
+        display: none;
+    }
+
+    .my_mission .card{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .develop{
+        padding: 0 30px;
+    }
+    .develop.flex{
+        flex-direction: column;
+    }
+
+    .w35,.w60{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .services .icon{
+        flex-direction: row;
+    }
+
+    .services .flex{
+        margin-bottom: 30px;
+    }
+
+    .services .service2{
+        flex-direction: column;
+    }
+
+
+
+
+}
+@media (max-width: 576px) {
+    .stay_mission .header{
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .my_mission .header{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+    
 }
